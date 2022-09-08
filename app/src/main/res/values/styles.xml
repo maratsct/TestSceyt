@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns2="http://schemas.android.com/apk/res-auto">
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/sceyt_color_primary</item>
+        <item name="colorPrimaryDark">@color/sceyt_color_primary_dark</item>
+        <item name="colorAccent">@color/sceyt_color_accent</item>
+        <item name="colorSecondary">@color/sceyt_color_primary</item>
+        <item name="colorControlNormal">@color/sceyt_color_primary</item>
+        <item name="windowActionModeOverlay">false</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowBackground">@color/sceyt_color_bg</item>
+        <item name="android:statusBarColor">@color/sceyt_color_status_bar</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="DefaultFontTheme" parent="AppTheme">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="My.TextInputLayout.FilledBox.Padding" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="materialThemeOverlay">@style/MyThemeOverlayFilledPadding</item>
+    </style>
+
+    <style name="MyThemeOverlayFilledPadding">
+        <item name="editTextStyle">@style/TextInputEditTextPadding</item>
+    </style>
+
+    <style name="TextInputEditTextPadding" parent="@style/Widget.MaterialComponents.TextInputEditText.FilledBox">
+        <!-- left and right padding -->
+        <item name="android:paddingStart" ns2:ignore="NewApi">2dp</item>
+        <item name="android:paddingEnd" ns2:ignore="NewApi">2dp</item>
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingRight">2dp</item>
+    </style>
+
+</resources>
